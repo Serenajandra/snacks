@@ -11,6 +11,7 @@
 // Crea un nuovo array con la lista dei mammiferi.
 
 const mammiferiArray = [];
+const altroArray = [];
 const animalsArray = [
     {
         nome: 'leone', 
@@ -29,13 +30,16 @@ const animalsArray = [
         classe: 'uccelli' 
     }
     ]
-
+    const item = document.getElementById("mammifero");
     for (let i = 0; i < animalsArray.length; i++) {
         const thisanimal = animalsArray[i];
-        console.log(thisanimal.classe)
+        // console.log(thisanimal.classe)
         if (thisanimal.classe === "mammiferi"){
-            mammiferiArray.push(thisanimal.classe)
+            mammiferiArray.push(thisanimal);
+        }else{
+            altroArray.push(thisanimal)
         }
     }
-    console.log(animalsArray, mammiferiArray)
+    console.log(animalsArray, mammiferiArray);
+    console.log(altroArray);
     
