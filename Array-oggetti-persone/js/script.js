@@ -36,22 +36,22 @@ nonPuòGuidare = [];
         const thisPerson = peopleArray[i];
         if (thisPerson.età >= 18) {
             const patentato = `<li>${thisPerson.nome} ${thisPerson.cognome} ha ${thisPerson.età} anni quindi può guidare</li>`
-            puòGuidare.push(patentato)
+            stringArray.push(patentato)
         } else{
             const nonPatentato = `<li>${thisPerson.nome} ${thisPerson.cognome} ha ${thisPerson.età} anni quindi non può guidare</li>`
-            nonPuòGuidare.push(nonPatentato)
+            stringArray.push(nonPatentato)
         };
     };
 console.log(puòGuidare, nonPuòGuidare);
 
-puòGuidare.forEach(element => {
-    stringArray.push(element)    
-});
+// puòGuidare.forEach(element => {
+//     stringArray.push(element)    
+// });
 
 
-nonPuòGuidare.forEach(element => {
-    stringArray.push(element)
-});
+// nonPuòGuidare.forEach(element => {
+    // stringArray.push(element)
+// });
 
 console.log(stringArray);
 const paragrafo = document.getElementById("paragrafo");
